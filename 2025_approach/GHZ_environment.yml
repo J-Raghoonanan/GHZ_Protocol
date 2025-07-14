@@ -1,0 +1,17 @@
+# ------------------------------------------------------------------
+# environment.yml  –  Conda recipe for the GHZ-state prep project
+# ------------------------------------------------------------------
+name: ghz_state_prep # activate with:  conda activate ghz_state_prep
+channels:
+  - conda-forge # always put conda-forge first for QuTiP 5.x
+dependencies:
+  # --- core runtime ----------------------------------------------
+  - python =3.11 # tested with 3.11; 3.12 also works
+  - numpy  >=1.25
+  - scipy  >=1.13
+  - qutip  >=5.2 # latest stable: 5.2.0 (6 Jun 2025) :contentReference[oaicite:0]{index=0}
+  # --- optional extras for notebooks / plotting ------------------
+  - matplotlib
+  - jupyterlab
+  # --- keep pip around for quick one-off installs ----------------
+  - pip
