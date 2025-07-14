@@ -13,7 +13,7 @@ from __future__ import annotations
 import numpy as np
 from typing import List, Tuple
 from dataclasses import dataclass, field
-from qutip import (tensor, basis, Qobj, sigmax, sigmay, sigmaz, qeye, ket2dm, expect)
+from qutip import (tensor, basis, Qobj, sigmax, sigmay, sigmaz, qeye, ket2dm, expect) # type: ignore
 
 # -----------------------------------------------------------------------------
 # Utility: single‑qubit operators positioned at site k
